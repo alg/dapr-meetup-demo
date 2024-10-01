@@ -1,0 +1,26 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: email-out-of-stock
+spec:
+  type: bindings.smtp
+  version: v1
+  metadata:
+  - name: host
+    value: localhost
+  - name: port
+    value: 1025
+  - name: user
+    value: ""
+  - name: password
+    value: ""
+  - name: skipTLSVerify
+    value: true
+  - name: emailFrom
+    value: "warehouse@example.com"
+  - name: emailTo
+    value: "supplier@example.com"
+  - name: subject
+    value: "We are out of stock"
+  - name: priority
+    value: "1"

@@ -1,0 +1,26 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: email-low-stock
+spec:
+  type: bindings.smtp
+  version: v1
+  metadata:
+  - name: host
+    value: localhost
+  - name: port
+    value: 1025
+  - name: user
+    value: ""
+  - name: password
+    value: ""
+  - name: skipTLSVerify
+    value: true
+  - name: emailFrom
+    value: "warehouse@example.com"
+  # - name: emailTo
+  #   value: "supplier@example.com"
+  - name: subject
+    value: "Low on stock"
+  - name: priority
+    value: "1"
