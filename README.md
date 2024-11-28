@@ -18,6 +18,8 @@
     docker compose up
     ```
 
+- Quit VPN apps (Amnesia etc), disable firewall (Lulu)
+
 - Start all components in separate terminals using `./run.sh` scripts
 
 - Try using `curl` to register orders with the given number of items:
