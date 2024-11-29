@@ -33,3 +33,5 @@
     ```
 
 - Try checking email at http://localhost:8025/ when remaining stock goes lower than 3.
+
+- Services `store` and `warehouse` have their own readme-s with more endpoints (renew stock, for example).
